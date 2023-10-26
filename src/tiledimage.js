@@ -1849,8 +1849,9 @@ $.extend($.TiledImage.prototype, $.EventSource.prototype, /** @lends OpenSeadrag
             tileCenter = positionT.plus( sizeT.divide( 2 ) ),
             tileSquaredDistance = viewportCenter.squaredDistanceTo( tileCenter );
 
+            console.log('overlap', !overlap);
         if ( !overlap ) {
-            sizeC = sizeC.plus( new $.Point( 1, 1 ) );
+            //sizeC = sizeC.plus( new $.Point( 1, 1 ) );
         }
 
         if (tile.isRightMost && this.wrapHorizontal) {
