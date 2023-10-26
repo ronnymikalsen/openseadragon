@@ -310,7 +310,7 @@ module.exports = function(grunt) {
     // Build task.
     // Cleans out the build folder and builds the code and images into it, checking lint.
     grunt.registerTask("build", [
-        "clean:build", "git-describe", "eslint", "concat", "uglify",
+        "clean:build", "git-describe", "eslint", "concat",
         "replace:cleanPaths", "copy:build"
     ]);
 
